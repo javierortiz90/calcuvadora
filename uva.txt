@@ -1,0 +1,13 @@
+la cantidad de uvas del mes X es: XXXX
+
+uvas total
+
+uvas pagos: tiene que sumar todos los uvas pagados hasta esa fecha
+
+uvas restantes: uvas total - uvas pagos
+
+capital: cant uvas * valor uva ese dia
+
+interes: = (uva restante * valor uva)*3.5*30/36000
+
+total: capital + interes
