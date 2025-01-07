@@ -1,0 +1,11 @@
+body {
+    background-color: rgb(252, 252, 252);
+    text-align: center;
+}
+
+
+@media (max-width: 1200px) {
+    .w-50 {
+        width: 100% !important;
+    }
+}

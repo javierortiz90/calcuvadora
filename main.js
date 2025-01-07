@@ -132,13 +132,38 @@ document.addEventListener('DOMContentLoaded', function () {
                     // Mostrar resultados en el DOM
                     resultado.innerHTML = `
                         
-                        <p>1. Cant UVAs del mes ${mesAnioSeleccionado}: ${cantUVA}</p>
-                        <p>2. Valor UVA del día ${fechaFormateada}: $${valorUVADia}</p>
-                        <p>3. UVAs Pagados al ${mesAnioSeleccionado}: ${sumaCantUVA.toFixed(2)}</p>
-                        <p>4. UVAs Restantes: ${restoUva.toFixed(2)}</p>
-                        <p>5. Capital: $${capital.toFixed(2)}</p>
-                        <p>6. Intereses: $${interes.toFixed(2)}</p>
-                        <h1>Total: $${total.toFixed(2)}</h1>
+                    <div class="row bg-white rounded shadow my-4 py-3">
+                        <div class="col-6 py-4">
+                            <p class="">Cant UVAs al <strong>${mesAnioSeleccionado}</strong>:</p>
+                            <h4><strong>${cantUVA}</strong></h4>
+                        </div>
+                        <div class="col-6 py-4">
+                            <p class="">UVAs Pagos al <strong>${mesAnioSeleccionado}</strong>:</p>
+                            <h4><strong>${sumaCantUVA.toFixed(2)}</strong></h4>
+                        </div>
+                        <div class="col-6 py-4">
+                            <p class="">Valor UVA al <strong>${fechaFormateada}</strong>:</p>
+                            <h4><strong>$${valorUVADia}</strong></h4>
+                        </div>
+                        <div class="col-6 py-4">
+                            <p class="">UVAs Restantes:</p>
+                            <h4><strong>${restoUva.toFixed(2)}</strong></h4>
+                        </div>
+                        <div class="col-6 my-4">
+                            <p>Capital:</p>
+                            <h3><strong>$${capital.toFixed(2)}</strong></h3>
+                        </div>
+                        <div class="col-6 my-4">
+                            <p>Intereses:</p>
+                            <h3><strong>$${interes.toFixed(2)}</strong></h3>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 bg-white rounded shadow my-4 py-3">
+                            <h2><strong>Total: $${total.toFixed(2)}</strong></h2>
+                        </div>
+                    </div>
+                        
                     `;
                 } else {
                     resultado.textContent = `No se encontró valor para la fecha ${fechaFormateada} en la API de valores.`;
