@@ -76,7 +76,7 @@ async function obtenerSumaHastaFecha(fechaSeleccionada) {
         const fechaItem = new Date(`${anio}-${mes}-01`);  // Creamos una fecha usando el primer día del mes
 
         // Comparamos las fechas
-        return fechaItem < fechaSeleccionadaDate;
+        return fechaItem-1 < fechaSeleccionadaDate;
     });
 
     // Sumar las Cant_UVA de las fechas filtradas
